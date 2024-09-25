@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E0E0E0"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#3B6CFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:elevation="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Productivity Tracker"
+            android:textSize="22dp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="20dp"
+            />
+
+    </LinearLayout>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What did you do today?"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/black"
+         />
+    <CheckBox
+        android:id="@+id/cb_early"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Woke up early"
+        android:layout_marginHorizontal="20dp"
+        />
+    <CheckBox
+        android:id="@+id/cb_fajr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prayed Fajr"
+        android:layout_marginHorizontal="20dp"
+
+        />
+    <CheckBox
+        android:id="@+id/cb_exercise"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Did some exercise"
+        />
+    <CheckBox
+        android:id="@+id/cb_eat"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ate healthy"
+        />
+    <CheckBox
+        android:id="@+id/cb_classes"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attended classes"
+        />
+    <CheckBox
+        android:id="@+id/cb_zuhr"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prayed Zuhr"
+        />
+    <CheckBox
+        android:id="@+id/cb_asr"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"
+        android:text="Prayed Asr"
+
+        />
+    <CheckBox
+        android:id="@+id/cb_maghrib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="Prayed Maghrib"
+        />
+    <CheckBox
+        android:id="@+id/cb_esha"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"
+        android:text="Prayed Esha"
+        />
+    <CheckBox
+        android:id="@+id/cb_bed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Going to bed early"
+        android:layout_marginHorizontal="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many pages of a book did you read today?"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"
+         />
+    <RadioGroup
+        android:id="@+id/rg_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp">
+        <RadioButton
+            android:id="@+id/rb_book_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 Pages"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/rb_book_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1-10 Pages"
+            />
+        <RadioButton
+            android:id="@+id/rb_book_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11-30 Pages"
+            />
+        <RadioButton
+            android:id="@+id/rb_book_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="More than 30 Pages"
+            />
+
+    </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How many glasses of water did you drink today?"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="20dp"
+            />
+        <RadioGroup
+            android:id="@+id/rg_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp">
+        <RadioButton
+            android:id="@+id/rb_water_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1-2 Glasses"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/rb_water_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3-4 Glasses"
+            />
+        <RadioButton
+            android:id="@+id/rb_water_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5-6 Glasses"
+            />
+        <RadioButton
+            android:id="@+id/rb_water_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="More than 6 Glasses"
+            />
+        </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many hours did you study today?"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+         />
+    <SeekBar
+        android:id="@+id/sb_study"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="20"
+        android:progress="0"
+        android:layout_marginHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:thumbTint="@color/blue"
+        android:progressTint="@color/blue"
+        />
+    <TextView
+        android:id="@+id/tv_study"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much time (hour) did you spend on your phone or pc today (without productivity purpose)?"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        />
+    <SeekBar
+        android:id="@+id/sb_screentime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="20"
+        android:progress="0"
+        android:paddingTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:thumbTint="@color/blue"
+        android:progressTint="@color/blue"
+        />
+    <TextView
+        android:id="@+id/tv_screentime"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much time did you sleep last night?"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        />
+    <SeekBar
+        android:id="@+id/sb_sleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="20"
+        android:progress="0"
+        android:layout_marginHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:thumbTint="@color/blue"
+        android:progressTint="@color/blue"
+        />
+    <TextView
+        android:id="@+id/tv_sleep"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="20dp"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate your today's productivity"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="7"
+            android:layout_gravity="center"
+            android:rating="1"
+            android:stepSize="1"
+            android:progressTint="#FFC107"
+            />
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Done"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="#3B6CFF"
+            />
+        <LinearLayout
+            android:id="@+id/output_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Your today's activities"
+                android:textStyle="bold"
+                android:layout_marginVertical="8dp"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/tv_output"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:text="The name of our country is bangladesh \n It is situated in South Asia"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                />
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back Home"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="@color/blue"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
